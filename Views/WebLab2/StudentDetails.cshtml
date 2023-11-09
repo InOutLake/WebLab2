@@ -1,0 +1,45 @@
+﻿@model Weblab2.Models.Student
+
+@{
+    ViewData["Title"] = "StudentDetails";
+}
+
+<h1>StudentDetails</h1>
+
+<div>
+    <h4>Student @Html.DisplayFor(m => m.StudentId)</h4>
+    <hr />
+    <div class="row">
+        <div class="col-md-2"><strong>@Html.LabelFor(m => m.LastName):</strong></div>
+        <div class="col-md-2"><strong>@Html.LabelFor(m => m.FirstName):</strong></div>
+        <div class="col-md-2"><strong>@Html.LabelFor(m => m.MiddleName):</strong></div>
+        <div class="col-md-2"><strong>@Html.LabelFor(m => m.Birthdate):</strong></div>
+        <div class="col-md-2"><strong>@Html.LabelFor(m => m.Gender):</strong></div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">@Model.LastName</div>
+        <div class="col-md-2">@Model.FirstName</div>
+        <div class="col-md-2">@Model.MiddleName</div>
+        <div class="col-md-2">@Model.Birthdate.ToShortDateString()</div>
+        <div class="col-md-2">
+            @if (Model.Gender == 1)
+            {
+                <div>Male</div>
+            }else {
+                <div>Female</div>
+            }
+        </div>
+    </div>
+    <p/>
+    <div class="row">
+        <div class="col-md-2"><strong>@Html.LabelFor(m => m.EnglishLevel):</strong></div>
+        <div class="col-md-2">@Html.DisplayFor(m => m.EnglishLevel)</div>
+    </div>
+    <div class="row">
+        <div class="col-md-2"><strong>@Html.LabelFor(m => m.Address):</strong></div>
+        <div class="col-md-2">@Html.DisplayFor(m => m.Address)</div>
+    </div>
+</div>
+<div>
+    <a asp-action="StudentsList">Back to List</a>
+</div>
