@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
+using Weblab2.Models.ViewModels;
 
 namespace Weblab2.Models;
 
@@ -337,4 +338,6 @@ public partial class _8i12LozhkomoevContext : DbContext
     }
 
     partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
+
+    public DbSet<Weblab2.Models.ViewModels.StudentVM>? StudentVM { get; set; }
 }

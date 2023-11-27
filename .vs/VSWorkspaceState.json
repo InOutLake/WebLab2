@@ -1,10 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Controllers",
+    "\\Models\\ViewModels",
     "\\Views",
     "\\Views\\WebLab2"
   ],
-  "SelectedNode": "\\Views\\WebLab2\\StudentDetails.cshtml",
+  "SelectedNode": "\\Views\\WebLab2\\CreateStudent.cshtml",
   "PreviewInSolutionExplorer": false
 }

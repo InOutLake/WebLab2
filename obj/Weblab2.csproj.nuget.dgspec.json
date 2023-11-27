@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Maxim\\source\\repos\\WebLab2\\Weblab2.csproj": {}
+    "C:\\Users\\Maxim\\source\\repos\\Weblab2\\Weblab2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Maxim\\source\\repos\\WebLab2\\Weblab2.csproj": {
+    "C:\\Users\\Maxim\\source\\repos\\Weblab2\\Weblab2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Maxim\\source\\repos\\WebLab2\\Weblab2.csproj",
+        "projectUniqueName": "C:\\Users\\Maxim\\source\\repos\\Weblab2\\Weblab2.csproj",
         "projectName": "Weblab2",
-        "projectPath": "C:\\Users\\Maxim\\source\\repos\\WebLab2\\Weblab2.csproj",
+        "projectPath": "C:\\Users\\Maxim\\source\\repos\\Weblab2\\Weblab2.csproj",
         "packagesPath": "C:\\Users\\Maxim\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Maxim\\source\\repos\\WebLab2\\obj\\",
+        "outputPath": "C:\\Users\\Maxim\\source\\repos\\Weblab2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Maxim\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -43,6 +43,10 @@
             "EntityFramework": {
               "target": "Package",
               "version": "[6.4.4, )"
+            },
+            "Microsoft.AspNet.Mvc": {
+              "target": "Package",
+              "version": "[5.3.0, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",

@@ -5,6 +5,7 @@ namespace Weblab2.Models.ViewModels
 {
     public class StudentVM
     {
+        [Key]
         public Guid StudentId { get; set; }
         [Required]
         [DisplayName("Last name")]
@@ -26,7 +27,7 @@ namespace Weblab2.Models.ViewModels
         public string Address { get; set; } = null!;
         [Required]
         public DateTime Birthdate { get; set; }
-        [StringLength(2)]
+        [Required]
         public string EnglishLevel { get; set; } = null!;
 
         public virtual ICollection<GradeSheet> GradeSheets { get; set; } = new List<GradeSheet>();

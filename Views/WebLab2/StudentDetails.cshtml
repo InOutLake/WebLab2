@@ -41,5 +41,7 @@
     </div>
 </div>
 <div>
-    <a asp-action="StudentsList">Back to List</a>
+    @Html.ActionLink("Edit", "EditStudent", "WebLab2", new { studentId = Model.StudentId }, new { @class = "btn btn-default", style = "border: 1px solid #000;" })
+    @Html.ActionLink("Back to list", "StudentsList", "WebLab2", null, new { @class = "btn btn-default", style = "border: 1px solid #000;" })
+    @Html.ActionLink("Delete", "DeleteStudent", "WebLab2", new { studentId = Model.StudentId }, new { @class = "btn btn-danger" })
 </div>

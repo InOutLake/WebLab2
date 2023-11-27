@@ -2,27 +2,18 @@
 
 <h2>Students List</h2>
 
-<table class="table table-striped">
-    <thead>
-        <tr>
-            <th class="text-right">Last Name</th>
-            <th class="text-right">First Name</th>
-            <th class="text-right">Birthdate</th>
-            <th class="text-right">ID</th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var student in Model)
-        {
-            <tr class="text-right">
-                <td>@student.FirstName</td>
-                <td>@student.LastName</td>
-                <td>@student.Birthdate.ToShortDateString()</td>
-                <td>@student.StudentId</td>
-                <td><a asp-controller="Weblab2" asp-action="StudentDetails" asp-route-studentId="@student.StudentId">Details</a></td>
-            </tr>
-        }
-    </tbody>
-    @Html.ActionLink("Add student", "CreateStudent", "WebLab2", new { @class = "btn btn-default" })
-</table>
+@Html.ActionLink("New Student", "CreateStudent", "WebLab2", null, new { @class = "btn btn-default", style = "border: 1px solid #000;" })
+ <div class="row" style="margin-bottom: 15px; margin-top: 15px">
+    <div class="col-md-4"><b>Full Name</b></div>
+    <div class="col-md-2"><b>Group</b></div>
+    <div class="col-md-2"><b>Birth date</b></div>
+     <div class="col-md-2"></div>
+     <div class="col-md-1"></div>
+     <div class="col-md-1"></div>
+ </div>
+@foreach (var student in Model)
+{
+    <div style="margin-bottom: 5px">
+        <partial name="StudentOverviewPartial.cshtml" model="student"/>
+    </div>
+}
